@@ -1,0 +1,36 @@
+{
+  "name": "strt/theme",
+  "description": "Тема STRT.",
+  "type": "wordpress-theme",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "vek",
+      "email": "oleg@isvek.ru",
+      "homepage": "https://isvek.ru",
+      "role": "Developer"
+    }
+  ],
+  "license": "GPL-3.0",
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Strt\\Theme\\": "src/php/"
+    },
+    "files": [
+      "inc/functions.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "php": ">=8.3"
+  },
+  "scripts": {
+    "composer-dump-autoload": [
+      "composer dump-autoload"
+    ]
+  }
+}

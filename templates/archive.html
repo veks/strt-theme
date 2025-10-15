@@ -1,0 +1,41 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"className":"container my-5"} -->
+<div class="wp-block-group container my-5">
+	<!-- wp:archive-title {"className":"h2 mb-2"} /-->
+	<!-- wp:term-description {"className":"text-secondary mb-4"} /-->
+
+	<!-- wp:query {"inherit":true,"className":"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"} -->
+	<div class="wp-block-query row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+		<!-- wp:post-template -->
+		<!-- wp:group {"className":"card h-100"} -->
+		<div class="wp-block-group card h-100">
+			<!-- wp:post-featured-image {"isLink":true,"className":"card-img-top"} /-->
+			<!-- wp:group {"className":"card-body d-flex flex-column"} -->
+			<div class="wp-block-group card-body d-flex flex-column">
+				<!-- wp:post-title {"isLink":true,"className":"h5 card-title mb-2"} /-->
+				<!-- wp:post-excerpt {"moreText":"Читать далее","className":"card-text text-secondary"} /-->
+				<!-- wp:post-date {"className":"mt-auto text-body-tertiary small"} /-->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"className":"col-12 d-flex justify-content-between align-items-center mt-4"} -->
+		<!-- wp:query-pagination-previous {"label":"← Назад","className":"btn btn-outline-secondary"} /-->
+		<!-- wp:query-pagination-numbers /-->
+		<!-- wp:query-pagination-next {"label":"Вперёд →","className":"btn btn-secondary"} /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph {"className":"col-12 alert alert-warning"} -->
+		<p class="col-12 alert alert-warning">Материалы не найдены.</p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
